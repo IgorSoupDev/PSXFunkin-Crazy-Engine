@@ -1,5 +1,5 @@
-TOOLS = tools/funkinisopak tools/funkinarcpak tools/funkinchartpak \
-	tools/funkinpicopak tools/funkintimconv \
+TOOLS = tools/funkinarcpak tools/funkinchartpak \
+	tools/funkintimpak \
 	tools/psxavenc tools/xainterleave
 
 all: $(TOOLS)
