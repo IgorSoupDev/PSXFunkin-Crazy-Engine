@@ -1024,8 +1024,6 @@ static void Stage_LoadMusic(void)
 	//Offset sing ends
 	stage.player->sing_end -= stage.note_scroll;
 	stage.opponent->sing_end -= stage.note_scroll;
-	if (stage.gf != NULL)
-		stage.gf->sing_end -= stage.note_scroll;
 	
 	//Begin reading mus
 	Audio_LoadMus(stage.stage_def->mus_path);
@@ -1040,8 +1038,6 @@ static void Stage_LoadMusic(void)
 	//Offset sing ends again
 	stage.player->sing_end += stage.note_scroll;
 	stage.opponent->sing_end += stage.note_scroll;
-	if (stage.gf != NULL)
-		stage.gf->sing_end += stage.note_scroll;
 }
 
 static void Stage_LoadState(void)
@@ -1128,7 +1124,6 @@ void Stage_Load(StageId id, StageDiff difficulty, boolean story)
 	stage.note_swap = (stage.mode == StageMode_Swap) ? NOTE_FLAG_OPPONENT : 0;
 	
 	//Load music
-	stage.note_scroll = 0;
 	Stage_LoadMusic();
 	
 	//Test offset
