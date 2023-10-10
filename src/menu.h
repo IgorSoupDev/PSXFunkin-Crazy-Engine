@@ -17,19 +17,7 @@ typedef enum
 	MenuPage_Main,
 	MenuPage_Story,
 	MenuPage_Freeplay,
-	MenuPage_Mods,
 	MenuPage_Options,
-	
-	#ifdef PSXF_NETWORK
-		MenuPage_NetJoin,
-		MenuPage_NetHost,
-		MenuPage_NetConnect,
-		MenuPage_NetFail,
-		MenuPage_NetOpWait,
-		MenuPage_NetOp,
-		MenuPage_NetLobby,
-		MenuPage_NetInitFail,
-	#endif
 	
 	MenuPage_Stage, //Changes game loop
 } MenuPage;

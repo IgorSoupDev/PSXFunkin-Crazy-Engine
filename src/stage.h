@@ -16,8 +16,6 @@
 #include "player.h"
 #include "object.h"
 
-#include "network.h"
-
 //Stage constants
 #define INPUT_LEFT  (PAD_LEFT  | PAD_SQUARE)
 #define INPUT_DOWN  (PAD_DOWN  | PAD_CROSS)
@@ -37,48 +35,36 @@
 //Stage enums
 typedef enum
 {
-	StageId_1_1, //Bopeebo
-	StageId_1_2, //Fresh
-	StageId_1_3, //Dadbattle
-	StageId_1_4, //Tutorial
+	StageId_1_1,
+	StageId_1_2,
+	StageId_1_3,
+	StageId_1_4,
 	
-	StageId_2_1, //Spookeez
-	StageId_2_2, //South
-	StageId_2_3, //Monster
+	StageId_2_1,
+	StageId_2_2,
+	StageId_2_3,
 	
-	StageId_3_1, //Pico
-	StageId_3_2, //Philly
-	StageId_3_3, //Blammed
+	StageId_3_1,
+	StageId_3_2,
+	StageId_3_3,
 	
-	StageId_4_1, //Satin Panties
-	StageId_4_2, //High
-	StageId_4_3, //MILF
+	StageId_4_1,
+	StageId_4_2,
+	StageId_4_3,
 	
-	StageId_4_4, //Test
+	StageId_4_4,
 	
-	StageId_5_1, //Cocoa
-	StageId_5_2, //Eggnog
-	StageId_5_3, //Winter Horrorland
+	StageId_5_1,
+	StageId_5_2,
+	StageId_5_3,
 	
-	StageId_6_1, //Senpai
-	StageId_6_2, //Roses
-	StageId_6_3, //Thorns
+	StageId_6_1,
+	StageId_6_2,
+	StageId_6_3,
 	
-	StageId_7_1, //Ugh
-	StageId_7_2, //Guns
-	StageId_7_3, //Stress
-	
-	StageId_Kapi_1, //Wocky
-	StageId_Kapi_2, //Beathoven
-	StageId_Kapi_3, //Hairball
-	StageId_Kapi_4, //Nyaw
-	
-	StageId_Clwn_1, //Improbable Outset
-	StageId_Clwn_2, //Madness
-	StageId_Clwn_3, //Hellclown
-	StageId_Clwn_4, //Expurgation
-	
-	StageId_2_4, //Clucked
+	StageId_7_1,
+	StageId_7_2,
+	StageId_7_3,
 	
 	StageId_Max
 } StageId;
@@ -97,8 +83,6 @@ typedef enum
 	StageMode_Normal,
 	StageMode_Swap,
 	StageMode_2P,
-	StageMode_Net1,
-	StageMode_Net2,
 } StageMode;
 
 typedef enum
@@ -106,7 +90,6 @@ typedef enum
 	StageTrans_Menu,
 	StageTrans_NextSong,
 	StageTrans_Reload,
-	StageTrans_Disconnect,
 } StageTrans;
 
 //Stage background
@@ -271,10 +254,5 @@ void Stage_BlendTexArb(Gfx_Tex *tex, const RECT *src, const POINT_FIXED *p0, con
 void Stage_Load(StageId id, StageDiff difficulty, boolean story);
 void Stage_Unload();
 void Stage_Tick();
-
-#ifdef PSXF_NETWORK
-void Stage_NetHit(Packet *packet);
-void Stage_NetMiss(Packet *packet);
-#endif
 
 #endif
