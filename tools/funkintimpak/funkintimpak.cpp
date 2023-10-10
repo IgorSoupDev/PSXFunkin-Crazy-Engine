@@ -39,6 +39,12 @@ int main(int argc, char* argv[])
     const char* outpath = argv[1];
     const char* inpath = argv[2];
 
+    if (strlen(strrchr(outpath, '/') + 1) > 12)
+    {
+        std::cerr << outpath << " name is longer than 12 characters!" << std::endl;
+        return 1;
+    }
+
     char* txtpath = new char[strlen(inpath) + 5];
     if (txtpath == nullptr) 
     {
