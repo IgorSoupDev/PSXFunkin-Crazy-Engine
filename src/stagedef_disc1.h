@@ -8,7 +8,6 @@
 		Back_Week1_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(1,1),FIXED_DEC(13,10)},
 		1, 1,
 		
 		StageId_1_2, STAGE_LOAD_FLAG
@@ -23,7 +22,6 @@
 		Back_Week1_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(13,10),FIXED_DEC(18,10)},
 		1, 2,
 		
 		StageId_1_3, STAGE_LOAD_FLAG
@@ -38,7 +36,6 @@
 		Back_Week1_New,
 		
 		//Song info
-		{FIXED_DEC(13,10),FIXED_DEC(15,10),FIXED_DEC(23,10)},
 		1, 3,
 		
 		StageId_1_3, 0
@@ -53,7 +50,6 @@
 		Back_Week1_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(1,1),FIXED_DEC(1,1)},
 		1, 4,
 		
 		StageId_1_4, 0
@@ -69,7 +65,6 @@
 		Back_Week2_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(17,10),FIXED_DEC(24,10)},
 		2, 1,
 		
 		StageId_2_2, STAGE_LOAD_FLAG
@@ -84,7 +79,6 @@
 		Back_Week2_New,
 		
 		//Song info
-		{FIXED_DEC(11,10),FIXED_DEC(15,10),FIXED_DEC(22,10)},
 		2, 2,
 		
 		StageId_2_3, STAGE_LOAD_FLAG | STAGE_LOAD_OPPONENT
@@ -99,7 +93,6 @@
 		Back_Week2_New,
 		
 		//Song info
-		{FIXED_DEC(13,10),FIXED_DEC(13,10),FIXED_DEC(16,10)},
 		2, 3,
 		
 		StageId_2_3, 0
@@ -115,7 +108,6 @@
 		Back_Week3_New,
 		
 		//Song info
-		{FIXED_DEC(12,10),FIXED_DEC(14,10),FIXED_DEC(16,10)},
 		3, 1,
 		
 		StageId_3_2, STAGE_LOAD_FLAG
@@ -130,7 +122,6 @@
 		Back_Week3_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(13,10),FIXED_DEC(2,1)},
 		3, 2,
 		
 		StageId_3_3, STAGE_LOAD_FLAG
@@ -145,7 +136,6 @@
 		Back_Week3_New,
 		
 		//Song info
-		{FIXED_DEC(12,10),FIXED_DEC(15,10),FIXED_DEC(23,10)},
 		3, 3,
 		
 		StageId_3_3, 0
@@ -161,7 +151,6 @@
 		Back_Week4_New,
 		
 		//Song info
-		{FIXED_DEC(13,10),FIXED_DEC(16,10),FIXED_DEC(18,10)},
 		4, 1,
 		
 		StageId_4_2, STAGE_LOAD_FLAG
@@ -176,7 +165,6 @@
 		Back_Week4_New,
 		
 		//Song info
-		{FIXED_DEC(13,10),FIXED_DEC(18,10),FIXED_DEC(2,1)},
 		4, 2,
 		
 		StageId_4_3, STAGE_LOAD_FLAG
@@ -191,7 +179,6 @@
 		Back_Week4_New,
 		
 		//Song info
-		{FIXED_DEC(14,10),FIXED_DEC(17,10),FIXED_DEC(26,10)},
 		4, 3,
 		
 		StageId_4_3, 0
@@ -206,7 +193,6 @@
 		Back_Dummy_New,
 		
 		//Song info
-		{FIXED_DEC(16,10),FIXED_DEC(16,10),FIXED_DEC(16,10)},
 		4, 4,
 		
 		StageId_4_4, 0
@@ -222,7 +208,6 @@
 		Back_Week5_New,
 		
 		//Song info
-		{FIXED_DEC(13,10),FIXED_DEC(13,10),FIXED_DEC(13,10)},
 		5, 1,
 		
 		StageId_5_2, STAGE_LOAD_FLAG
@@ -237,7 +222,6 @@
 		Back_Week5_New,
 		
 		//Song info
-		{FIXED_DEC(14,10),FIXED_DEC(16,10),FIXED_DEC(19,10)},
 		5, 2,
 		
 		StageId_5_3, STAGE_LOAD_FLAG
@@ -252,7 +236,6 @@
 		Back_Dummy_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(11,10),FIXED_DEC(13,10)},
 		5, 3,
 		
 		StageId_5_3, 0
@@ -268,7 +251,6 @@
 		Back_Week6_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(12,10),FIXED_DEC(13,10)},
 		6, 1,
 		
 		StageId_6_2, STAGE_LOAD_FLAG | STAGE_LOAD_OPPONENT
@@ -283,7 +265,6 @@
 		Back_Week6_New,
 		
 		//Song info
-		{FIXED_DEC(12,10),FIXED_DEC(13,10),FIXED_DEC(15,10)},
 		6, 2,
 		
 		StageId_6_3, 0
@@ -298,7 +279,6 @@
 		Back_Week6_New,
 		
 		//Song info
-		{FIXED_DEC(11,10),FIXED_DEC(13,10),FIXED_DEC(15,10)},
 		6, 3,
 		
 		StageId_6_3, 0
@@ -314,7 +294,6 @@
 		Back_Week7_New,
 		
 		//Song info
-		{FIXED_DEC(125,100),FIXED_DEC(18,10),FIXED_DEC(23,10)},
 		7, 1,
 		
 		StageId_7_2, STAGE_LOAD_FLAG
@@ -329,7 +308,6 @@
 		Back_Week7_New,
 		
 		//Song info
-		{FIXED_DEC(14,10),FIXED_DEC(2,1),FIXED_DEC(25,10)},
 		7, 2,
 		
 		StageId_7_3, STAGE_LOAD_FLAG | STAGE_LOAD_PLAYER | STAGE_LOAD_OPPONENT | STAGE_LOAD_GIRLFRIEND
@@ -344,7 +322,6 @@
 		Back_Week7_New,
 		
 		//Song info
-		{FIXED_DEC(175,100),FIXED_DEC(22,10),FIXED_DEC(26,10)},
 		7, 3,
 		
 		StageId_7_3, 0

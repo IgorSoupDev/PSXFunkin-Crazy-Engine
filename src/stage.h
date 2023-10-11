@@ -114,8 +114,6 @@ typedef struct
 	StageBack* (*back)();
 	
 	//Song info
-	fixed_t speed[3];
-	
 	u8 week, week_song;
 	
 	StageId next_stage;
