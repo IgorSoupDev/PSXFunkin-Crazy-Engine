@@ -22,9 +22,7 @@
 #define INPUT_UP    (PAD_UP    | PAD_TRIANGLE)
 #define INPUT_RIGHT (PAD_RIGHT | PAD_CIRCLE)
 
-#define STAGE_FLAG_JUST_STEP     (1 << 0) //Song just stepped this frame
-#define STAGE_FLAG_VOCAL_ACTIVE  (1 << 1) //Song's vocal track is currently active
-#define STAGE_FLAG_SCORE_REFRESH (1 << 2) //Score text should be refreshed
+#define STAGE_FLAG_JUST_STEP  (1 << 0) //Song just stepped this frame
 
 #define STAGE_LOAD_PLAYER     (1 << 0) //Reload player character
 #define STAGE_LOAD_OPPONENT   (1 << 1) //Reload opponent character
@@ -119,7 +117,6 @@ typedef struct
 	fixed_t speed[3];
 	
 	u8 week, week_song;
-	u8 music_track, music_channel;
 	
 	StageId next_stage;
 	u8 next_load;

@@ -1,0 +1,28 @@
+all: \
+	iso/songs/freakyMenu/freakyMenu.mus \
+	iso/songs/bopeebo/bopeebo.mus \
+	iso/songs/fresh/fresh.mus \
+	iso/songs/dad-battle/dad-battle.mus \
+	iso/songs/tutorial/tutorial.mus \
+	iso/songs/spookeez/spookeez.mus \
+	iso/songs/south/south.mus \
+	iso/songs/monster/monster.mus \
+	iso/songs/pico/pico.mus \
+	iso/songs/philly-nice/philly-nice.mus \
+	iso/songs/blammed/blammed.mus \
+	iso/songs/satin-panties/satin-panties.mus \
+	iso/songs/high/high.mus \
+	iso/songs/milf/milf.mus \
+	iso/songs/test/test.mus \
+	iso/songs/cocoa/cocoa.mus \
+	iso/songs/eggnog/eggnog.mus \
+	iso/songs/winter-horrorland/winter-horrorland.mus \
+	iso/songs/senpai/senpai.mus \
+	iso/songs/roses/roses.mus \
+	iso/songs/thorns/thorns.mus \
+	iso/songs/ugh/ugh.mus \
+	iso/songs/guns/guns.mus \
+	iso/songs/stress/stress.mus
+
+iso/%.mus: iso/%.txt
+	tools/funkinmuspak/funkinmuspak $@ $<

@@ -10,7 +10,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(1,1),FIXED_DEC(13,10)},
 		1, 1,
-		XA_Bopeebo, 0,
 		
 		StageId_1_2, STAGE_LOAD_FLAG
 	},
@@ -26,7 +25,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(13,10),FIXED_DEC(18,10)},
 		1, 2,
-		XA_Fresh, 2,
 		
 		StageId_1_3, STAGE_LOAD_FLAG
 	},
@@ -42,7 +40,6 @@
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(15,10),FIXED_DEC(23,10)},
 		1, 3,
-		XA_Dadbattle, 0,
 		
 		StageId_1_3, 0
 	},
@@ -58,7 +55,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(1,1),FIXED_DEC(1,1)},
 		1, 4,
-		XA_Tutorial, 2,
 		
 		StageId_1_4, 0
 	},
@@ -75,7 +71,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(17,10),FIXED_DEC(24,10)},
 		2, 1,
-		XA_Spookeez, 0,
 		
 		StageId_2_2, STAGE_LOAD_FLAG
 	},
@@ -91,7 +86,6 @@
 		//Song info
 		{FIXED_DEC(11,10),FIXED_DEC(15,10),FIXED_DEC(22,10)},
 		2, 2,
-		XA_South, 2,
 		
 		StageId_2_3, STAGE_LOAD_FLAG | STAGE_LOAD_OPPONENT
 	},
@@ -107,7 +101,6 @@
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(13,10),FIXED_DEC(16,10)},
 		2, 3,
-		XA_Monster, 0,
 		
 		StageId_2_3, 0
 	},
@@ -124,7 +117,6 @@
 		//Song info
 		{FIXED_DEC(12,10),FIXED_DEC(14,10),FIXED_DEC(16,10)},
 		3, 1,
-		XA_Pico, 0,
 		
 		StageId_3_2, STAGE_LOAD_FLAG
 	},
@@ -140,7 +132,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(13,10),FIXED_DEC(2,1)},
 		3, 2,
-		XA_Philly, 2,
 		
 		StageId_3_3, STAGE_LOAD_FLAG
 	},
@@ -156,7 +147,6 @@
 		//Song info
 		{FIXED_DEC(12,10),FIXED_DEC(15,10),FIXED_DEC(23,10)},
 		3, 3,
-		XA_Blammed, 0,
 		
 		StageId_3_3, 0
 	},
@@ -173,7 +163,6 @@
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(16,10),FIXED_DEC(18,10)},
 		4, 1,
-		XA_SatinPanties, 0,
 		
 		StageId_4_2, STAGE_LOAD_FLAG
 	},
@@ -189,7 +178,6 @@
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(18,10),FIXED_DEC(2,1)},
 		4, 2,
-		XA_High, 2,
 		
 		StageId_4_3, STAGE_LOAD_FLAG
 	},
@@ -205,7 +193,6 @@
 		//Song info
 		{FIXED_DEC(14,10),FIXED_DEC(17,10),FIXED_DEC(26,10)},
 		4, 3,
-		XA_MILF, 0,
 		
 		StageId_4_3, 0
 	},
@@ -221,7 +208,6 @@
 		//Song info
 		{FIXED_DEC(16,10),FIXED_DEC(16,10),FIXED_DEC(16,10)},
 		4, 4,
-		XA_Test, 2,
 		
 		StageId_4_4, 0
 	},
@@ -238,7 +224,6 @@
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(13,10),FIXED_DEC(13,10)},
 		5, 1,
-		XA_Cocoa, 0,
 		
 		StageId_5_2, STAGE_LOAD_FLAG
 	},
@@ -254,7 +239,6 @@
 		//Song info
 		{FIXED_DEC(14,10),FIXED_DEC(16,10),FIXED_DEC(19,10)},
 		5, 2,
-		XA_Eggnog, 2,
 		
 		StageId_5_3, STAGE_LOAD_FLAG
 	},
@@ -270,7 +254,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(11,10),FIXED_DEC(13,10)},
 		5, 3,
-		XA_WinterHorrorland, 0,
 		
 		StageId_5_3, 0
 	},
@@ -287,7 +270,6 @@
 		//Song info
 		{FIXED_DEC(1,1),FIXED_DEC(12,10),FIXED_DEC(13,10)},
 		6, 1,
-		XA_Senpai, 0,
 		
 		StageId_6_2, STAGE_LOAD_FLAG | STAGE_LOAD_OPPONENT
 	},
@@ -303,7 +285,6 @@
 		//Song info
 		{FIXED_DEC(12,10),FIXED_DEC(13,10),FIXED_DEC(15,10)},
 		6, 2,
-		XA_Roses, 2,
 		
 		StageId_6_3, 0
 	},
@@ -319,7 +300,6 @@
 		//Song info
 		{FIXED_DEC(11,10),FIXED_DEC(13,10),FIXED_DEC(15,10)},
 		6, 3,
-		XA_Thorns, 0,
 		
 		StageId_6_3, 0
 	},
@@ -336,7 +316,6 @@
 		//Song info
 		{FIXED_DEC(125,100),FIXED_DEC(18,10),FIXED_DEC(23,10)},
 		7, 1,
-		XA_Ugh, 0,
 		
 		StageId_7_2, STAGE_LOAD_FLAG
 	},
@@ -352,7 +331,6 @@
 		//Song info
 		{FIXED_DEC(14,10),FIXED_DEC(2,1),FIXED_DEC(25,10)},
 		7, 2,
-		XA_Guns, 2,
 		
 		StageId_7_3, STAGE_LOAD_FLAG | STAGE_LOAD_PLAYER | STAGE_LOAD_OPPONENT | STAGE_LOAD_GIRLFRIEND
 	},
@@ -368,7 +346,6 @@
 		//Song info
 		{FIXED_DEC(175,100),FIXED_DEC(22,10),FIXED_DEC(26,10)},
 		7, 3,
-		XA_Stress, 0,
 		
 		StageId_7_3, 0
 	},
