@@ -6,8 +6,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <cstdint>
-#include <algorithm>
 #include <unordered_set>
 
 #include "json.hpp"
@@ -48,17 +46,17 @@ void WriteWord(std::ostream &out, uint16_t word)
 
 int main(int argc, char *argv[])
 {
-	if (argc < 2)
+	if (argc < 3)
 	{
-		std::cout << "usage: funkinchartpak in_json" << std::endl;
+		std::cout << "usage: funkinchtpak out.cht in.json" << std::endl;
 		return 0;
 	}
 	
 	//Read json
-	std::ifstream i(argv[1]);
+	std::ifstream i(argv[2]);
 	if (!i.is_open())
 	{
-		std::cout << "Failed to open " << argv[1] << std::endl;
+		std::cout << "Failed to open " << argv[2] << std::endl;
 		return 1;
 	}
 	json j;
@@ -72,7 +70,7 @@ int main(int argc, char *argv[])
 	
 	double speed = song_info["speed"];
 	
-	std::cout << argv[1] << " speed: " << speed << " ini bpm: " << bpm << " step_crochet: " << step_crochet << std::endl;
+	std::cout << argv[2] << " speed: " << speed << " ini bpm: " << bpm << " step_crochet: " << step_crochet << std::endl;
 	
 	double milli_base = 0;
 	uint16_t step_base = 0;
@@ -85,7 +83,7 @@ int main(int argc, char *argv[])
 	std::unordered_set<uint32_t> note_fudge;
 	for (auto &i : song_info["notes"]) //Iterate through sections
 	{
-		bool is_opponent = i["mustHitSection"] != true; //Note: swapped
+		bool is_opponent = i["mustHitSection"] != true; //Note swapped
 		
 		//Read section
 		Section new_section;
@@ -172,10 +170,10 @@ int main(int argc, char *argv[])
 	notes.push_back(dum_note);
 	
 	//Write to output
-	std::ofstream out(std::string(argv[1]) + ".cht", std::ostream::binary);
+	std::ofstream out(std::string(argv[1]), std::ostream::binary);
 	if (!out.is_open())
 	{
-		std::cout << "Failed to open " << argv[1] << ".cht" << std::endl;
+		std::cout << "Failed to open " << argv[1] << std::endl;
 		return 1;
 	}
 	

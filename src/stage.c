@@ -165,9 +165,9 @@ static void Stage_ChangeBPM(u16 bpm, u16 step)
 	stage.step_time = FIXED_DIV(FIXED_DEC(12,1), stage.step_crochet);
 	
 	//Get new crochet based values
-	stage.early_safe = stage.late_safe = stage.step_crochet / 6; //10 frames
+	stage.early_safe = stage.late_safe = stage.step_crochet / 6; //166 ms
 	stage.late_sus_safe = stage.late_safe;
-	stage.early_sus_safe = stage.early_safe * 2 / 5;
+	stage.early_sus_safe = stage.early_safe >> 1;
 }
 
 static Section *Stage_GetPrevSection(Section *section)
@@ -220,11 +220,12 @@ static u8 Stage_HitNote(PlayerState *this, u8 type, fixed_t offset)
 		offset = -offset;
 	
 	u8 hit_type;
-	if (offset > stage.late_safe * 9 / 11)
-		hit_type = 3; //SHIT
-	else if (offset > stage.late_safe * 6 / 11)
+
+	if (offset > stage.late_safe * 72 / 100) //120ms
+			hit_type = 3; //SHIT
+	else if (offset > stage.late_safe * 48 / 100) //80ms
 		hit_type = 2; //BAD
-	else if (offset > stage.late_safe * 3 / 11)
+	else if (offset > stage.late_safe * 30 / 100) //50ms
 		hit_type = 1; //GOOD
 	else
 		hit_type = 0; //SICK
@@ -970,7 +971,7 @@ static void Stage_LoadState(void)
 	//Initialize stage state
 	stage.flag = STAGE_FLAG_VOCAL_ACTIVE;
 	
-	stage.gf_speed = 1 << 2;
+	stage.gf_speed = 4;
 	
 	stage.state = StageState_Play;
 	
@@ -1528,16 +1529,16 @@ void Stage_Tick(void)
 					switch (stage.song_step)
 					{
 						case 16 << 2:
-							stage.gf_speed = 2 << 2;
+							stage.gf_speed = 8;
 							break;
 						case 48 << 2:
-							stage.gf_speed = 1 << 2;
+							stage.gf_speed = 4;
 							break;
 						case 80 << 2:
-							stage.gf_speed = 2 << 2;
+							stage.gf_speed = 8;
 							break;
 						case 112 << 2:
-							stage.gf_speed = 1 << 2;
+							stage.gf_speed = 4;
 							break;
 					}
 					break;
